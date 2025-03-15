@@ -35,7 +35,7 @@ python app.py
 
 ### Production mode:
 ```bash
-gunicorn app:app
+pip install waitress
 ```
 
 ## Project Structure
