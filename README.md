@@ -37,6 +37,9 @@ python app.py
 ```bash
 pip install waitress
 ```
+```bash
+.\start_production.bat
+```
 
 ## Project Structure
 ```
