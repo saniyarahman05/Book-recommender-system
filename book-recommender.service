@@ -1,0 +1,12 @@
+[Unit]
+Description=Book Recommender Flask Application
+After=network.target
+
+[Service]
+User=your_username
+WorkingDirectory=/path/to/book_recommendor
+Environment="PATH=/path/to/book_recommendor/venv/bin"
+ExecStart=/path/to/book_recommendor/venv/bin/gunicorn --workers 3 --bind unix:book_recommender.sock -m 007 wsgi:app
+
+[Install]
+WantedBy=multi-user.target 
